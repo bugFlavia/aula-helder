@@ -1,3 +1,5 @@
+const db = require("../db/MongoClient.js");
+const { ObjectId } = require("mongodb");
 const { conectar, getDatabase } = require("../db/MongoClient.js");
 
 class Emprestimo {
@@ -54,3 +56,5 @@ class Emprestimo {
     }
   }
 }
+
+module.exports = new Emprestimo();

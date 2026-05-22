@@ -1,3 +1,5 @@
+const db = require("../db/MongoClient.js");
+const { ObjectId } = require("mongodb");
 const { conectar, getDatabase } = require("../db/MongoClient.js");
 
 class Livro {
@@ -54,3 +56,4 @@ class Livro {
     }
   }
 }
+module.exports = new Livro();
